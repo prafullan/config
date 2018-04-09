@@ -1,0 +1,10 @@
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka
+  server:
+    enableSelfPreservation: false
+server:
+  port: 8100

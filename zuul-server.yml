@@ -1,0 +1,53 @@
+server:
+  port: 8070
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka
+hystrix:
+  metrics:
+    enabled: true
+
+zuul:
+  prefix: /service
+  routes:
+    company:
+      path: /companies/**
+      strip-prefix: false
+      serviceId: company
+    company1:
+      path: /companyactuator/**
+      strip-prefix: false
+      serviceId: company
+    document:
+      path: /documents/**
+      strip-prefix: false
+      serviceId: document
+    document1:
+      path: /documentactuator/**
+      strip-prefix: false
+      serviceId: document
+    download:
+      path: /download/**
+      strip-prefix: false
+      serviceId: download
+    download1:
+      path: /downloadactuator/**
+      strip-prefix: false
+      serviceId: download
+    eureka:
+      path: /eureka/**
+      url: http://localhost:8100
+    zipkin:
+      path: /zipkin/**
+      url: http://localhost:9411	  
+    service1:
+      service-id: company
+    service2:
+      service-id: document
+    service3:
+      service-id: download
+ribbon:
+  eager-load:
+    clients: company,document
+    enabled: true
