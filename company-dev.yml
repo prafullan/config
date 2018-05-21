@@ -2,6 +2,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8100/eureka
+spring:
+  
+  datasource:
+    password: postgres
+    url: jdbc:postgresql://10.232.45.47:5432/microservices_company_dev
+    username: postgres
 server:
   port: 8081
 management:
