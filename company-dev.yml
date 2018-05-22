@@ -19,3 +19,7 @@ info:
   app:
     name: '{cipher}fa6b965e8ba672c148ab3884e64d7de114d5c2b4d5f2f7856bce24258eeca012'
     description: Spring company Actuator Working development Examples 
+logging:
+  file: D:/logs/CompanyService/application_dev.log
+  level:
+    root: INFO
