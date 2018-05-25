@@ -1,25 +1,16 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8100/eureka
-spring:
-  
-  datasource:
-    password: postgres
-    url: jdbc:postgresql://10.232.45.47:5432/microservices_company_dev
-    username: postgres
+      defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
 server:
   port: 8081
-management:
-  context-path: /companyactuator
-#spring:
-#  profiles:
- #   active: dev
+
 info:
   app:
-    name: '{cipher}fa6b965e8ba672c148ab3884e64d7de114d5c2b4d5f2f7856bce24258eeca012'
-    description: Spring company Actuator Working development Examples 
+    name: '{cipher}595e3ffb02bdb99a230a1b44905caa151bf9d0bcddb47df040101752c32ac95d'
+    description: Spring company Actuator Working Examples Test
+
 logging:
-  file: D:/logs/CompanyService/application_dev.log
-  level:
-    root: DEBUG
+    level:
+        ROOT: INFO
+        io.github.jhipster: INFO
