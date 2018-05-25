@@ -8,7 +8,7 @@ server:
 info:
   app:
     name: '{cipher}595e3ffb02bdb99a230a1b44905caa151bf9d0bcddb47df040101752c32ac95d'
-    description: Spring company Actuator Working Examples Test
+    description: Spring company Actuator Working Examples Test jhipster
 
 logging:
     level:
