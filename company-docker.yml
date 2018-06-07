@@ -3,6 +3,5 @@ logging:
         ROOT: INFO
         io.github.jhipster: INFO
 info:
-  app:
-    name: '{cipher}595e3ffb02bdb99a230a1b44905caa151bf9d0bcddb47df040101752c32ac95d'
-    description: Company service details
+    app:
+        description: Company service details
