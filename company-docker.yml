@@ -4,4 +4,4 @@ logging:
         io.github.jhipster: INFO
 info:
     app:
-        description: Company service details
+        description: Company service
