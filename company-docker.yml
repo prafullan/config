@@ -1,7 +1,7 @@
 logging:
     level:
-        ROOT: INFO
-        io.github.jhipster: INFO
+        ROOT: DEBUG
+        io.github.jhipster: DEBUG
 info:
     app:
         description: Company service details
