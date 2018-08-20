@@ -1,2 +1,4 @@
-
+logging:
+    level:
+        ROOT: INFO
 
